@@ -10,12 +10,13 @@ function setup() {
 function draw() {
   background(0)
 
+
 //CICLO PER CREAZIONE RETTANGOLI
-  for (let a = 10; a < windowWidth - 100; a += 150) {
-  for (let b = 10; b < windowHeight - 50; b += 100) {
+  for (let a = 10; a < windowWidth; a += 50) {
+  for (let b = 10; b < windowHeight + 50; b += 50) {
 
 //VARIABILI PER USARE IL MOVIMENTO DEL MOUSE
-      let c = map(mouseX, 0, width, 0, 400);
+      let c = map(mouseX, 0, width, 0, 150);
       let d = map(mouseY, 0, height, 50, 255);
       noStroke()
       if (mouseY < height / 2) {
@@ -23,7 +24,7 @@ function draw() {
       } else {
         fill(random(d), random(255), 200, random(100))
       }
-      rect(a, b, c, d)
+      rect(a, b, c, d-50)
     }
   }
 
@@ -34,14 +35,14 @@ function draw() {
 
   fill(255);
   stroke(255);
-  ellipse(x, y, 200);
+  ellipse(x, y, 50);
 
   fill(255)
   noStroke()
   textFont('Montserrat');
-  textSize(100);
+  textSize(20);
   textAlign(CENTER);
-  text('MOVE THE DOT', x, y - 150);
+  text('MOVE THE DOT', x, y - 50);
 
 }
 
