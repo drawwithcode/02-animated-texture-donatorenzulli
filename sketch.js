@@ -39,7 +39,7 @@ function draw() {
 
   fill(255)
   noStroke()
-  textFont('Montserrat');
+  textFont('Impact');
   textSize(20);
   textAlign(CENTER);
   text('MOVE THE DOT', x, y - 50);
