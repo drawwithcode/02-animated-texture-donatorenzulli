@@ -12,8 +12,8 @@ function draw() {
 
 
 //CICLO PER CREAZIONE RETTANGOLI
-  for (let a = 10; a < windowWidth; a += 50) {
-  for (let b = 10; b < windowHeight + 50; b += 50) {
+  for (let a = 0; a < windowWidth; a += 50) {
+  for (let b = 0; b < windowHeight + 50; b += 50) {
 
 //VARIABILI PER USARE IL MOVIMENTO DEL MOUSE
       let c = map(mouseX, 0, width, 0, 150);
